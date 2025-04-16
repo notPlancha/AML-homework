@@ -1,0 +1,22 @@
+[project]
+channels = ["conda-forge"]
+name = "AML-homework"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+server = "jupyter server"
+export = "pixi-pack pack --create-executable"
+
+[dependencies]
+jupyter = ">=1.1.1,<2"
+python = ">=3.13.3,<3.14"
+pytorch = ">=2.6.0,<3"
+pixi-pack = ">=0.5.0,<0.6"
+torchvision = ">=0.21.0,<0.22"
+scikit-learn = ">=1.6.1,<2"
+matplotlib = ">=3.10.1,<4"
+scipy = ">=1.15.2,<2"
+numpy = ">=2.2.4,<3"
+pyprojroot = ">=0.3.0,<0.4"
+pandas = ">=2.2.3,<3"
