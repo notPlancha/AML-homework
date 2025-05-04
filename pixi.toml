@@ -2,11 +2,9 @@
 channels = ["conda-forge"]
 name = "AML-homework"
 platforms = ["win-64"]
-version = "0.1.0"
 
 [tasks]
 server = "jupyter server"
-export = "pixi-pack pack --create-executable"
 
 [dependencies]
 jupyter = ">=1.1.1,<2"
@@ -20,3 +18,13 @@ scipy = ">=1.15.2,<2"
 numpy = ">=2.2.4,<3"
 pyprojroot = ">=0.3.0,<0.4"
 pandas = ">=2.2.3,<3"
+icecream = ">=2.1.4,<3"
+
+[environments]
+format = {features = ["format"], no-default-feature = true}
+
+[feature.format.dependencies]
+ruff = ">=0.11.8,<0.12"
+
+[feature.format.tasks]
+format = "ruff format src/"
