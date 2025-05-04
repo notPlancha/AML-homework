@@ -5,6 +5,7 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [tasks]
 server = "jupyter server"
+export = "pixi project export conda-environment > environment.yml"
 
 [dependencies]
 jupyter = ">=1.1.1,<2"

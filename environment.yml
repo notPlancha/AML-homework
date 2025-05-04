@@ -1,0 +1,17 @@
+name: default
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+- jupyter >=1.1.1,<2
+- python >=3.13.3,<3.14
+- pytorch >=2.6.0,<3
+- torchvision >=0.21.0,<0.22
+- scikit-learn >=1.6.1,<2
+- matplotlib >=3.10.1,<4
+- scipy >=1.15.2,<2
+- numpy >=2.2.5,<3
+- pyprojroot >=0.3.0,<0.4
+- pandas >=2.2.3,<3
+- icecream >=2.1.4,<3
+
