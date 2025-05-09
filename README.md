@@ -35,7 +35,7 @@ conda env create --name envname --file=environment.yml
 
 Finally, you can just use pip. The versions are specificed in `pixi.toml`.
 
-The labs are inside `src/`. The repository (which includes everyhting besides the data) is available at github.com/notPlancha/AML-homework
+The labs are inside `src/`. The repository (which includes everyhting besides the data) is available at https://github.com/notPlancha/AML-homework
 
 # Lab 1
 

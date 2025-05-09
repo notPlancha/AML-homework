@@ -9,9 +9,8 @@ export = "pixi project export conda-environment > environment.yml"
 
 [dependencies]
 jupyter = ">=1.1.1,<2"
-python = ">=3.13.3,<3.14"
-pytorch = ">=2.6.0,<3"
-torchvision = ">=0.21.0,<0.22"
+python = "*"
+# torchvision = ">=0.21.0,<0.22"
 scikit-learn = ">=1.6.1,<2"
 matplotlib = ">=3.10.1,<4"
 scipy = ">=1.15.2,<2"
@@ -19,12 +18,22 @@ numpy = ">=2.2.5,<3"
 pyprojroot = ">=0.3.0,<0.4"
 pandas = ">=2.2.3,<3"
 icecream = ">=2.1.4,<3"
+pytorch = "*"
+keras = "*"
 
 [environments]
 format = {features = ["format"], no-default-feature = true}
+gpu = {features = ["gpu"]}
+
+[feature.gpu]
+platforms = ["win-64"]
+system-requirements = {cuda = "12"}
 
 [feature.format.dependencies]
 ruff = ">=0.11.8,<0.12"
 
 [feature.format.tasks]
 format = "ruff format src/"
+
+[feature.gpu.dependencies]
+pytorch-gpu = "*"
