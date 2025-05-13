@@ -37,5 +37,8 @@ nbconvert = "*"
 format = "ruff format src/"
 to_py = "jupyter nbconvert --to script"
 
+[pypi-dependencies]
+visualkeras = ">=0.1.4, <0.2"
+
 [feature.gpu.dependencies]
 pytorch-gpu = ">=2.6.0,<3"
