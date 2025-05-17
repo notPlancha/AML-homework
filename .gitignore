@@ -5,6 +5,8 @@ cache/
 # data
 data/
 
+models/
+
 # pixi environments
 .pixi
 *.egg-info
