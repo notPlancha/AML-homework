@@ -9,7 +9,7 @@ export = "pixi project export conda-environment > environment.yml"
 
 [dependencies]
 jupyter = ">=1.1.1,<2"
-python = ">=3.13.3,<3.14"
+python = "*"
 scikit-learn = ">=1.6.1,<2"
 matplotlib = ">=3.10.3,<4"
 scipy = ">=1.15.2,<2"
@@ -20,10 +20,13 @@ icecream = ">=2.1.4,<3"
 pytorch = ">=2.6.0,<3"
 keras = ">=3.9.2,<4"
 tqdm = ">=4.67.1,<5"
+transformers = ">=4.51.3,<5"
+huggingface_hub = ">=0.31.2,<0.32"
 
 [environments]
 dev = {features = ["dev"], no-default-feature = true}
 gpu = {features = ["gpu"]}
+download-models = {features = ["download-models"], no-default-feature = true}
 
 [feature.gpu]
 platforms = ["win-64"]
@@ -42,3 +45,17 @@ visualkeras = ">=0.1.4, <0.2"
 
 [feature.gpu.dependencies]
 pytorch-gpu = ">=2.6.0,<3"
+
+[feature.download-models]
+platforms = ["win-64"]
+
+[feature.download-models.dependencies]
+python = ">3.9,<3.13"
+jupyter = ">=1.1.1,<2"
+huggingface_hub = ">=0.31.2,<0.32"
+
+[feature.download-models.pypi-dependencies]
+tensorflow = "*"
+keras = ">=3"
+torch = ">=2.7.0, <3"
+pyprojroot = ">=0.3.0, <0.4"
