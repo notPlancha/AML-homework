@@ -37,6 +37,6 @@ Finally, you can just use pip. The versions are specificed in `pixi.toml`.
 
 The labs are inside `src/`. The repository (which includes everyhting besides the data) is available at https://github.com/notPlancha/AML-homework
 
-# Lab 1
+# Lab 1 and 2
 
 The dataset used is [Sign Language MNIST](https://www.kaggle.com/datasets/datamunge/sign-language-mnist). It is composed of grayscaled picutres of handsigned letters (in csv), with the objective of classifying the letters.
