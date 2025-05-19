@@ -5,7 +5,7 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [tasks]
 server = "jupyter server"
-export = "pixi project export conda-environment > environment.yml"
+export = "pixi project export conda-environment > environment.yml" # Dont forget to format
 
 [dependencies]
 jupyter = ">=1.1.1,<2"
@@ -46,12 +46,10 @@ to_py = "jupyter nbconvert --to script"
 [pypi-dependencies]
 visualkeras = ">=0.1.4, <0.2"
 kagglehub = ">=0.3.12, <0.4"
+torchviz = ">=0.0.3, <0.0.4"
 
 [feature.gpu.dependencies]
 pytorch-gpu = ">=2.6.0,<3"
-
-[feature.gpu.pypi-dependencies]
-keras-hub = ">=0.20.0, <0.21"
 
 [feature.download-models]
 platforms = ["win-64"]

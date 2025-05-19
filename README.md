@@ -39,4 +39,4 @@ The labs are inside `src/`. The repository (which includes everyhting besides th
 
 # Lab 1 and 2
 
-The dataset used is [Sign Language MNIST](https://www.kaggle.com/datasets/datamunge/sign-language-mnist). It is composed of grayscaled picutres of handsigned letters (in csv), with the objective of classifying the letters.
+The dataset used is [Sign Language MNIST](https://www.kaggle.com/datasets/datamunge/sign-language-mnist). It is composed of grayscaled pictures of handsigned letters (in csv), with the objective of classifying the letters.
