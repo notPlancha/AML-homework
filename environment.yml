@@ -5,13 +5,24 @@ channels:
 dependencies:
 - jupyter >=1.1.1,<2
 - python >=3.13.3,<3.14
-- pytorch >=2.6.0,<3
-- torchvision >=0.21.0,<0.22
 - scikit-learn >=1.6.1,<2
-- matplotlib >=3.10.1,<4
+- matplotlib >=3.10.3,<4
 - scipy >=1.15.2,<2
 - numpy >=2.2.5,<3
 - pyprojroot >=0.3.0,<0.4
 - pandas >=2.2.3,<3
 - icecream >=2.1.4,<3
+- pytorch >=2.6.0,<3
+- keras >=3.9.2,<4
+- tqdm >=4.67.1,<5
+- transformers >=4.51.3,<5
+- huggingface_hub >=0.31.2,<0.32
+- torchvision >=0.21.0,<0.22
+- lightning >=2.5.1.post0,<3
+- torchinfo >=1.8.0,<2
+- pip
+- pip:
+  - visualkeras>=0.1.4, <0.2
+  - kagglehub>=0.3.12, <0.4
+  - torchviz>=0.0.3, <0.0.4
 
