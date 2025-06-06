@@ -1,3 +1,4 @@
+#%%
 import torch
 import numpy as np
 import matplotlib.pyplot as plt
@@ -74,13 +75,14 @@ if __name__ == "__main__":
     # Example with MNIST
     from torchvision import datasets, transforms
     from torch.utils.data import DataLoader
-
+    from pyprojroot import here
+    
     # Load MNIST train and test set
     transform = transforms.Compose([
         transforms.ToTensor(),
     ])
-    mnist_train = datasets.MNIST(root='./data', train=True, download=True, transform=transform)
-    mnist_test = datasets.MNIST(root='./data', train=False, download=True, transform=transform)
+    mnist_train = datasets.MNIST(root=here("data"), train=True, download=True, transform=transform)
+    mnist_test = datasets.MNIST(root=here("data"), train=False, download=True, transform=transform)
     train_loader = DataLoader(mnist_train, batch_size=128, shuffle=True)
     test_loader = DataLoader(mnist_test, batch_size=2, shuffle=True)
 
