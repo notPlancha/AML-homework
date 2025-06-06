@@ -26,6 +26,7 @@ lightning = ">=2.5.1.post0,<3"
 torchinfo = ">=1.8.0,<2"
 spacy = ">=3.8.6,<4"
 torchmetrics = ">=1.7.1,<2"
+datasets = ">=3.6.0,<4"
 
 [environments]
 dev = {features = ["dev"], no-default-feature = true}
@@ -38,11 +39,18 @@ system-requirements = {cuda = "12"}
 
 [feature.dev.dependencies]
 ruff = ">=0.11.8,<0.12"
-nbconvert = "*"
+jupytext = "*"
 
 [feature.dev.tasks]
 format = "ruff format src/"
-to_py = "jupyter nbconvert --to script"
+
+[feature.dev.tasks.to_jup]
+cmd = "jupytext {{ file }} --to notebook"
+args = ["file"]
+
+[feature.dev.tasks.to_py]
+cmd = "jupytext {{ file }} --to py:percent"
+args = ["file"]
 
 [pypi-dependencies]
 visualkeras = ">=0.1.4, <0.2"
