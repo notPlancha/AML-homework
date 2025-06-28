@@ -28,6 +28,8 @@ spacy = ">=3.8.6,<4"
 torchmetrics = ">=1.7.1,<2"
 datasets = ">=3.6.0,<4"
 timm = ">=1.0.15,<2"
+onnx = ">=1.18.0,<2"
+torchview = ">=0.2.6,<0.3"
 
 [environments]
 dev = {features = ["dev"], no-default-feature = true}
