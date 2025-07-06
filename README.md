@@ -35,7 +35,7 @@ Alternatively, you can load it conda:
 conda env create --name envname --file=environment.yml
 ```
 
-Finally, you can just use pip. The versions are specificed in `pixi.toml`.
+Finally, you can just use pip. The versions are specificed in `pixi.toml`. A lot of the packages isn't being used and was only for development.
 
 The labs are inside `src/`. The repository (which includes everyhting besides the data) is available at https://github.com/notPlancha/AML-homework
 
@@ -51,4 +51,4 @@ The dataset used is Ultralytics's COCO8, "a small, but versatile object detectio
 
 ## Complementary task: finetuning any of the hugginface models
 
-The dataset used is RecipeNLG, a novel dataset of cooking recipes, introduced by Bien et. al. in (RecipeNLG: A Cooking Recipes Dataset for Semi-Structured Text Generation)[https://aclanthology.org/2020.inlg-1.4/], available in https://recipenlg.cs.put.poznan.pl.
+The dataset used is RecipeNLG, a novel dataset of cooking recipes, introduced by Bien et. al. in [RecipeNLG: A Cooking Recipes Dataset for Semi-Structured Text Generation](https://aclanthology.org/2020.inlg-1.4/), available in https://recipenlg.cs.put.poznan.pl.
